@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <!-- Title -->
+  <title>Coogle</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="../static/img/core-img/favicon.ico" />
+
+  <!-- Core Stylesheet -->
+  <link href="../static/style.css" rel="stylesheet" />
+
+  <!-- Responsive CSS -->
+  <link href="../static/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <section class="clients-feedback-area bg-white section_padding_10 clearfix" id="testimonials">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+          <div class="slider slider-for"></div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-5">
+          <div class="slider slider-nav">
+            <div class="client-thumbnail">
+              <img src="../static/img/bg-img/letter-o.png" alt="" />
+            </div>
+            <div class="client-thumbnail">
+              <img src="../static/img/bg-img/letter-o.png" alt="" />
+            </div>
+            <div class="client-thumbnail">
+              <img src="../static/img/bg-img/letter-g.png" alt="" />
+            </div>
+            <div class="client-thumbnail">
+              <img src="../static/img/bg-img/letter-l.png" alt="" />
+            </div>
+            <div class="client-thumbnail">
+              <img src="../static/img/bg-img/letter-e.png" alt="" />
+            </div>
+            <div class="client-thumbnail">
+              <img src="../static/img/bg-img/letter-c.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- result  -->
+  <section class="special-area bg-white  " id="list-result">
+    {% for i in range(0, 10)  %}
+    <div class="container" id="result">
+      <div class="row">
+        <div class="col-12 col-md-12">
+          <div class="single-special text-center wow fadeInUp" data-wow-delay="0.2s">
+            <form method="POST" name="id_result">
+              <a href="/content/{{id[i]}}">
+                <h4 style="text-align: left; color: blue;">{{title[i]}}</h4>
+              </a>
+              <p style="text-align: left; margin-left: 0px; color: green;">{{url[i]}}</p>
+              <p style="text-align: left;">{{description[i]}}</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </section>
+  <script>
+    // let html = ""
+    // const leng = "{{leng}}";
+    // console.log(leng);
+    // var i;
+    // for (i = 0; i < leng; i++) {
+    //   html += '<div class="container" id="result">';
+    //   html += '<div class="row">';
+    //   html += '<div class="col-12 col-md-12">';
+    //   html +=
+    //     '<div class="single-special text-center wow fadeInUp" data-wow-delay="0.2s">';
+    //   html += '<h4 style="text-align: left;">';
+    //   html += title[i];
+    //   html += '</h4>';
+    //   html += '<a style="text-align: left; color: blue;" href = "';
+    //   html += results[i]['url'];
+    //   html += '"> ';
+    //   html += "</a>";
+    //   html += ' <p style="text-align: left;"> ';
+    //   html += results[i]['description'];
+    //   html += "</p>";
+    //   html += "</div>";
+    //   html += "</div>";
+    //   html += "</div>";
+    //   html += "</div>";
+    //   document.getElementById('list-result').innerHTML = html;
+    // }
+  </script>
+
+  <!-- ***** Footer Area Start ***** -->
+
+  <!-- Jquery-2.2.4 JS -->
+  <script src="../static/js/jquery-2.2.4.min.js"></script>
+  <!-- Popper js -->
+  <script src="../static/js/popper.min.js"></script>
+  <!-- Bootstrap-4 Beta JS -->
+  <script src="../static/js/bootstrap.min.js"></script>
+  <!-- All Plugins JS -->
+  <script src="../static/js/plugins.js"></script>
+  <!-- Slick Slider Js-->
+  <script src="../static/js/slick.min.js"></script>
+  <!-- Footer Reveal JS -->
+  <!-- <script src="../static/js/footer-reveal.min.js"></script> -->
+  <!-- Active JS -->
+  <script src="../static/js/active.js"></script>
+</body>
+
+</html>

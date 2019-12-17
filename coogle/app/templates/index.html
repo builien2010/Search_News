@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Coogle</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../static/img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link href="../static/style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="../static/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="colorlib-load"></div>
+    </div>
+
+    <!-- ***** Wellcome Area Start ***** -->
+    <section class="wellcome_area clearfix" id="home">
+        <div class="container h-100">
+            <div class="row h-100 align-items-baseline">
+                <div class=" col-lg-12 col-md">
+                    <div class="wellcome-heading">
+                        <h2>Coogle Search
+                            <h3>C</h3>
+                            <!-- <p>Everything You Need. To Start Selling Online Beautifully</p> -->
+                    </div>
+                    <div class="get-start-area">
+                        <!-- Form Start -->
+                        <form method="POST" class="form-inline">
+                            <input id="text-input" type="text" name="text-search" class="form-control email"
+                                placeholder="       Search anything ...">
+                            <a href="#" class="submit"><i class="fas fa-search"></i></a>
+
+
+                            <!-- <button type="button" value="submit-btn" class="submit" name="submit-btn">Search</button> -->
+                        </form>
+
+
+                        <!-- Form End -->
+                    </div>
+                    <form method="POST">
+                        <div>
+                            <button type="radio" class="btn submit-btn2"
+                                style="margin-top:5px; font-size: 15; margin-left:10px" name="topic_btn"
+                                value="đời sống">Đời sống</button>
+                            <button class="btn submit-btn2" style="margin-top:5px" name="topic_btn" value="du lịch">Du
+                                lịch</button>
+                            <button class="btn submit-btn2" style="margin-top:5px" name="topic_btn"
+                                value="pháp luật">Pháp luật</button>
+                            <button class="btn submit-btn2" style="margin-top:5px" name="topic_btn" value="thể thao">Thể
+                                thao</button>
+                            <button class="btn submit-btn2" style="margin-top:5px" name="topic_btn" value="số hóa">Số
+                                hóa</button>
+                        </div>
+                        <div>
+                            <button checked="checked" class="btn submit-btn2"
+                                style="margin-top:px; font-size: 15; margin-left:10px" name="topic_btn"
+                                value="thời sự">Thời sự</button>
+                            <button class="btn submit-btn2" style="margin-top:5px" name="topic_btn"
+                                value="kinh doanh">Kinh doanh</button>
+                            <button class="btn submit-btn2" style="margin-top:5px" name="topic_btn"
+                                value="giáo dục">Giáo dục</button>
+                            <button class="btn submit-btn2" style="margin-top:5px" name="topic_btn"
+                                value="khoa học">Khoa học</button>
+                            <button class="btn submit-btn2" style="margin-top:5px" name="topic_btn"
+                                value="giải trí">Giải trí</button>
+                        </div>
+                    </form>
+
+
+                </div>
+
+            </div>
+            <!-- Welcome thumb -->
+            <div class="welcome-thumb wow fadeInDown" data-wow-delay="0.5s">
+                <img src="../static/img/bg-img/right2.png" alt="">
+            </div>
+
+    </section>
+    <!-- ***** Wellcome Area End ***** -->
+
+    <!-- ***** Special Area Start ***** -->
+
+    <script>
+        function moveToResult() {
+            const elmnt = document.getElementById("result");
+            elmnt.scrollIntoView({
+                behavior: "smooth",
+                block: 'start'
+            });
+        }
+
+
+        function runScript(e) {
+            //See notes about 'which' and 'key'
+            if (e.keyCode == 13) {
+                const elmnt = document.getElementById("result");
+                elmnt.scrollIntoView({
+                    behavior: "smooth",
+                    block: 'start'
+                });
+            }
+        }
+    </script>
+
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-social-icon text-center section_padding_70 clearfix">
+
+    </footer>
+
+    <!-- ***** Footer Area Start ***** -->
+
+    <!-- Jquery-2.2.4 JS -->
+    <script src="../static/js/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="../static/js/popper.min.js"></script>
+    <!-- Bootstrap-4 Beta JS -->
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!-- All Plugins JS -->
+    <script src="../static/js/plugins.js"></script>
+    <!-- Slick Slider Js-->
+    <script src="../static/js/slick.min.js"></script>
+    <!-- Footer Reveal JS -->
+    <script src="../static/js/footer-reveal.min.js"></script>
+    <!-- Active JS -->
+    <script src="../static/js/active.js"></script>
+</body>
+
+</html>
